@@ -1,0 +1,8 @@
+mat-card{
+  transition: transform 0.3s ease-out;
+  cursor: pointer;
+}
+mat-card:hover{
+    transform: scale(1.1);
+    outline: red solid 2px;
+}

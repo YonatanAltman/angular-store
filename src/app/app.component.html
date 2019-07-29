@@ -1,1 +1,12 @@
-<mat-toolbar>My App</mat-toolbar>
+<div class="main">
+
+	<mat-toolbar>
+		<span>
+    {{title.title}}
+    </span>
+    <div>cart : {{count|async}}</div>
+    </mat-toolbar>
+<app-side-nav></app-side-nav>
+<app-store></app-store>
+<div class="footer">{{all}}</div> 
+</div>

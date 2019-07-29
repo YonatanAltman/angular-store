@@ -1,3 +1,36 @@
-p {
+.main{
+  display: grid;
+  grid-template: 
+  " nav nav" auto
+  " side store  " 1fr
+  " footer footer " auto
+  / 1fr 4fr;
+    height: 90vh;
+    padding: 0;
+    grid-gap: 6px;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+div,span {
   font-family: Lato;
+}
+mat-toolbar{
+  grid-area: nav;
+  background-color: lightskyblue;
+  display: grid;
+  grid-template-columns: 6fr 1fr
+  
+  
+}
+app-side-nav{
+  grid-area: side;
+ 
+}
+app-store{
+  grid-area: store;
+}
+.footer{
+
+  grid-area: footer;
 }
